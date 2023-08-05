@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./project/index.js" defer></script>
+    <script src="./index.js" defer></script>
     <title> Landing Page Japan </title>
 </head>
 
@@ -18,9 +18,13 @@
             </div>
 
             <div class="nav-center">
-                <p>Home</p>
-                <p>About</p>
-                <p>Contact Us</p>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
                 <input type="text" id="search">
                 <img src="./images/search.png" alt="search">
             </div>
@@ -36,32 +40,54 @@
     </header>
 
     <main class="main">
-        <aside class="aside">
+        <div class="info">
             <section class="section section1">
-                <img src="./images/location-white.png" alt="location" class="img-aside">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <h4> Read More </h4>
-                <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                <aside class="aside aside1" onmouseover="mudarImgLocation()" onmouseout="voltarImg()">
+                    <img src="./images/location-white.png" alt="location" class="img-aside" id="img-location">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4> Read More </h4>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                </aside>
             </section>
-        </aside>
 
-        <aside class="aside">
             <section class="section section2">
-                <img src="./images/places-white.png" alt="places-white" class="img-aside">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <h4> Read More </h4>
-                <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                <aside class="aside aside2" onmouseover="mudarImgPlaces()" onmouseout="voltarImg()">
+                    <img src="./images/places-white.png" alt="places-white" class="img-aside" id="img-places">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4> Read More </h4>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                </aside>
             </section>
+
+            <section class="section section3" onmouseover="mudarImgUser()" onmouseout="voltarImg()">
+                <aside class="aside aside3">
+                    <img src="./images/section-user-white.png" alt="user-white" class="img-aside" id="img-user">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4> Read More </h4>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                </aside>
+            </section>
+        </div>
+
+        <aside class="favoriteSpots">
+            <p> Find the best spots fot you </p>
+            <h2> favorite spots </h2>
         </aside>
 
-        <aside class="aside">
-            <section class="section section3">
-                <img src="./images/section-user-white.png" alt="user-white" class="img-aside">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <h4> Read More </h4>
-                <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
-            </section>
-        </aside>
+        <div class="container-slider">
+            <button id="prev-button"><img src="./images/arrow-right.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img src="./images/card-1.jfif" alt="" class="slider on">
+                <img src="./images/card-2.png" alt="" class="slider">
+                <img src="./images/card-3.jfif" alt="" class="slider">
+                <img src="./images/card-4.jfif" alt="" class="slider">
+                <img src="./images/card-5.jfif" alt="" class="slider">
+                <img src="./images/card-6.jpg" alt="" class="slider">
+                <img src="./images/card-7.jpg" alt="" class="slider">
+                <img src="./images/card-8.jpg" alt="" class="slider">
+            </div>
+            <button id="next-button"><img src="./images/arrow-right.png" alt="next-button"></button>
+        </div>
     </main>
 </body>
 
