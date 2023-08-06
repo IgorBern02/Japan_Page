@@ -363,7 +363,10 @@ a:hover {
     top: -70px;
     line-height: 23px;
     z-index: 1;
+    opacity: 1;
+    transition: .2s ease-in-out;
 }
+
 
 .container-images .container-img-text h2 {
     color: var(--primary-color);
@@ -399,7 +402,7 @@ a:hover {
     border-radius: 15px;
   }
   
-  .current-item {
+  .current-item{
     opacity: 1;
   }
 

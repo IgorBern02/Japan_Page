@@ -23,6 +23,7 @@ const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
+const textImg = document.querySelectorAll('.description');
 
 controls.forEach((control) => {
     control.addEventListener('click', () => {
@@ -52,6 +53,8 @@ controls.forEach((control) => {
 
         items[currentItem].classList.add("current-item");
 
-        // console.log("control", isLeft, currentItem)
+        textImg.forEach((description) => description.classList.remove('container-img-text'));
+
+        textImg[currentItem].classList.add("container-img-text");
     });
 });
