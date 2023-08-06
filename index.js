@@ -1,71 +1,57 @@
 // Função Hover
-function mudarImgLocation(){
-    document.getElementById('img-location').src="./images/location-red.png"
+function mudarImgLocation() {
+    document.getElementById('img-location').src = "./images/location-red.png"
 }
 
-function voltarImg(){
-    document.getElementById('img-location').src="./images/location-white.png";
-    document.getElementById('img-places').src="./images/places-white.png";
-    document.getElementById('img-user').src="./images/section-user-white.png";
+function voltarImg() {
+    document.getElementById('img-location').src = "./images/location-white.png";
+    document.getElementById('img-places').src = "./images/places-white.png";
+    document.getElementById('img-user').src = "./images/section-user-white.png";
 }
 
-function mudarImgPlaces(){
-    document.getElementById('img-places').src="./images/places-red.png"
+function mudarImgPlaces() {
+    document.getElementById('img-places').src = "./images/places-red.png"
 }
 
-function mudarImgUser(){
-    document.getElementById('img-user').src="./images/section-user-red.png"
+function mudarImgUser() {
+    document.getElementById('img-user').src = "./images/section-user-red.png"
 }
 
 // Slider Imagens
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
-// const carousel = document.querySelector('.container-slides'),
-// firstImg = carousel.querySelectorAll('img')[0];
-// arrowIcons = document.querySelectorAll('.main button');
 
-// let firstImgWidth = firstImg.clientWidth + 14;
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
-// arrowIcons.forEach(icon => {
-//     icon.addEventListener('click', () => {
-//         carousel.scrollLeft += icon.id == 'left' ? -firstImgWidth : firstImgWidth;
-//     });
-// });
+controls.forEach((control) => {
+    control.addEventListener('click', () => {
+        const isLeft =
+            control.classList.contains('prev-button');
 
+        if (isLeft) {
+            currentItem -= 1;
+        } else {
+            currentItem += 1;
+        }
 
+        if (currentItem >= maxItems) {
+            currentItem = 0;
+        }
 
-let currentSlide = 0;
+        if (currentItem < 0) {
+            currentItem = maxItems - 1;
+        }
 
-function hideSlider(){
-    slider.forEach(item => item.classList.remove('on'));
-};
+        items.forEach((item) => item.classList.remove("current-item"));
 
-function showSlider(){
-    slider[currentSlide].classList.add('on');
-};
+        items[currentItem].scrollIntoView({
+            behavior: "smooth",
+            inline: "center"
+        });
 
-function prevSlider(){
-    hideSlider();   
-    if(currentSlide === 0){
-        currentSlide = slider.length -1
-    } else {
-        currentSlide--
-    }
-    showSlider()
-};
+        items[currentItem].classList.add("current-item");
 
-function nextSlider(){
-    hideSlider();
-    if(currentSlide === slider.length -1){
-        currentSlide = 0
-    } else {
-        currentSlide++
-    }
-    showSlider()
-};
-
-btnPrev.addEventListener('click', prevSlider);
-btnNext.addEventListener('click', nextSlider);
-
-
+        // console.log("control", isLeft, currentItem)
+    });
+});
