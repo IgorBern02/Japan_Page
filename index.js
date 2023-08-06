@@ -21,6 +21,19 @@ function mudarImgUser(){
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
+// const carousel = document.querySelector('.container-slides'),
+// firstImg = carousel.querySelectorAll('img')[0];
+// arrowIcons = document.querySelectorAll('.main button');
+
+// let firstImgWidth = firstImg.clientWidth + 14;
+
+// arrowIcons.forEach(icon => {
+//     icon.addEventListener('click', () => {
+//         carousel.scrollLeft += icon.id == 'left' ? -firstImgWidth : firstImgWidth;
+//     });
+// });
+
+
 
 let currentSlide = 0;
 
@@ -54,3 +67,5 @@ function nextSlider(){
 
 btnPrev.addEventListener('click', prevSlider);
 btnNext.addEventListener('click', nextSlider);
+
+
