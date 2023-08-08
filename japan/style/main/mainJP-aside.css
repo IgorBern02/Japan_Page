@@ -1,0 +1,146 @@
+.main {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.980), black);
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 48px -200px 300px 200px rgba(0, 0, 0, 0.75);
+    position: relative;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+}
+
+.info::after {
+    content: '';
+    border-bottom: 1px solid #535353;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+}
+
+.section {
+    position: relative;
+    bottom: 60%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+}
+
+.section .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .aside p {
+    width: 70%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    color: var(--primary-color);
+    font-family: Barlow;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.section .aside img.img-aside {
+    position: absolute;
+    left: 10%;
+    top: 32%;
+    width: 35px;
+    height: 35px;
+}
+
+.section .aside h4 {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 18%;
+    left: 25%;
+    color: var(--primary-color);
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.section .aside img.img-arrow {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.section .aside1 {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.section .aside1:after {
+    content: '';
+    width: 100%;
+    border: 1px solid #fa0000;
+    position: relative;
+    top: 67%;
+    z-index: 1;
+    opacity: 0;
+    transition: .1s ease-in-out;
+}
+
+.aside1:hover::after {
+    opacity: 1;
+}
+
+.section .aside2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.section .aside2:after {
+    content: '';
+    width: 100%;
+    border: 1px solid #fa0000;
+    position: relative;
+    top: 67%;
+    z-index: 1;
+    opacity: 0;
+    transition: .1s ease-in-out;
+}
+
+.aside2:hover::after {
+    opacity: 1;
+}
+
+.section .aside3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.section .aside3:after {
+    content: '';
+    width: 100%;
+    border: 1px solid #fa0000;
+    position: relative;
+    top: 67%;
+    z-index: 1;
+    opacity: 0;
+    transition: .1s ease-in-out;
+}
+
+.aside3:hover::after {
+    opacity: 1;
+}
