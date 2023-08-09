@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./style/header/headerJP.css">
     <link rel="stylesheet" href="./style/main/mainJP-aside.css">
     <link rel="stylesheet" href="./style/main/mainJP-slide.css">
-    <link rel="stylesheet" href="./style/main/mainJP-video.css">
+    <link rel="stylesheet" href="./style/footer/footer.css">
     <title> Landing Page Japan </title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -43,7 +44,7 @@
     </header>
 
     <main class="main">
-        <div class="info">
+        <div class="info" data-aos="fade-up">
             <section class="section section1">
                 <aside class="aside aside1" onmouseover="mudarImgLocation()" onmouseout="voltarImg()">
                     <img src="./images/location-white.png" alt="location" class="img-aside" id="img-location">
@@ -72,12 +73,12 @@
             </section>
         </div>
 
-        <aside class="favoriteSpots">
+        <aside class="favoriteSpots" data-aos="fade-up">
             <p> Find the best spots fot you </p>
             <h2> favorite spots </h2>
         </aside>
 
-        <div class="container-slider">
+        <div class="container-slider" data-aos="fade-up">
 
             <div class="container-images">
                 <div class="card card1">
@@ -168,50 +169,30 @@
                     <div class="shadow"></div>
                 </div>
             </div>
-
         </div>
         <button class="prev-button control"><img src="./images/arrow-left-slider.png" alt="prev-button"></button>
         <button class="next-button control"><img src="./images/arrow-right-slider.png" alt="next-button"></button>
+    </main>
 
-        <div class="main-2">
-            <div class="text-main-2">
-                <h2>Travel and inspire your life</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Labore quae harum accusantium minus quos mollitia quaerat, 
-                    quam eligendi voluptates fugiat! 
-                </p>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/G5RpJwCJDqc" 
-                    title="Japan Video" 
-                    width="330" 
-                    height="170"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="video-2">
-                <iframe src="https://www.youtube.com/embed/X6Nu4xzPDXE" 
-                    title="YouTube video player" 
-                    width="330"
-                    height="170" 
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
+    <footer>
+        <h5> emailofvisit@gmail.com </h5>
+        <p><img src="./images/whatsapp.png" alt="Contact Us Wpp"> 99-99999-9999 </p>
+    </footer>
 
-            <!-- <base target="_blank" /> <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0"
+    <script src="./scriptJP.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- <base target="_blank" /> <iframe width="400" height="215" frameborder="0" scrolling="no" marginheight="0"
                 marginwidth="0"
                 src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;z=11&amp;ll=-34.603723,-58.381593&amp;output=embed"></iframe><br /><small><a
                     href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;z=11&amp;ll=-34.603723,-58.381593"
                     style="color:#0000FF;text-align:left">See bigger map</a>
             </small> -->
-        </div>
-    </main>
-
-    <script src="./scriptJP.js"></script>
-</body>
-
-</html>

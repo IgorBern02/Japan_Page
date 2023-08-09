@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    background: rgb(255, 0, 0, 0.7);
+    border: none;
+    color: aliceblue;
+    height: 8vh;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer h5, p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: barlow;
+    font-weight: 200;
+}
+
+footer p img{
+    width: 16px;
+}

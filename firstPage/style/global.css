@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+@font-face {
+    font-family: bebas-neue;
+    src: url(../../fonts/BebasNeue-Regular.woff);
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
