@@ -59,8 +59,11 @@
     width: 220px;
     height: 320px;
     border-radius: 10px;
-    object-fit: cover;
-    
+    object-fit: cover;   
+}
+
+.card a{
+    text-decoration: none;
 }
 
 .card .container-img-text {

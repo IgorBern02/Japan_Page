@@ -46,18 +46,40 @@
     gap: 25px;
 }
 
+ 
 .nav .nav-center ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 25px;
-
 }
 
-.nav .nav-center ul li,
+.nav .nav-center ul li:hover{
+    background: rgba(225, 225, 225, 0.2);
+}
+
+.nav .nav-center ul li{
+    position: relative;
+    font-size: 1.1rem;
+    font-family: bebas-neue, Poppins;
+    font-weight: 200;
+    list-style-type: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+nav .nav-center a{
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+/* .nav .nav-center ul li,
 a {
-    text-transform: uppercase;
     color: var(--primary-color);
     font-size: 1.1rem;
     font-family: bebas-neue, Poppins;
@@ -66,14 +88,73 @@ a {
     cursor: pointer;
     text-decoration: none;
     transition: .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+}  */
+
+.dropdown{
+    position: absolute;
+    z-index: 1;
 }
 
-.nav .nav-center ul li:hover,
+.dropdown:hover .dropdown-menu{
+    display: block;
+    /* display: flex; */
+}
+
+.dropdown a{
+    color: #fff;
+}
+
+.dropdown-menu{
+    position: absolute;
+    width: 100%;
+    display: none;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.dropdown-menu a{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: barlow;
+    text-align: center;
+    padding: 10px;
+}
+
+.dropdown-menu a:hover{
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(2px);
+    color: #000;
+}
+
+#arrow-down{
+    position: relative;
+    left: 2px;
+    top: 2px;
+    width: 25px;
+}
+
+/* .nav .nav-center ul .dropdown a img{
+    width: 30px;
+    position: relative;
+    top: 30%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+} */
+
+
+/* .nav .nav-center ul li:hover,
 a:hover {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
     transform: scale(1.1);
-}
+} */
 
 .nav .nav-center input {
     border: none;
@@ -97,7 +178,7 @@ a:hover {
 .nav img {
     width: 35px;
     height: 35px;
-}
+} 
 
 #text-header {
     position: absolute;
@@ -124,3 +205,6 @@ a:hover {
     font-size: 14px;
     color: #ffffffe1;
 }
+   
+
+

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/footer/footer.css">
     <title> Landing Page Japan </title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="lightbox.css">
 </head>
 
 <body>
@@ -24,9 +25,21 @@
             <div class="nav-center">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Countries</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Map</a></li>
+                        <!-- <li><a href="#">Countries</a></li> -->
+                        <li class="dropdown" onmouseover="chanceImg()" onmouseout="backImg()">
+                            <a href="#">Countries <img src="../firstPage/images/arrow-down.png" alt="small-down"
+                                    id="arrow-down"></a>
+
+                            <div class="dropdown-menu">
+                                <a href="./indexJP.html">Japan</a>
+                                <a href="#">United States</a>
+                                <a href="#">Germany</a>
+                                <a href="#">England</a>
+                                <a href="#">Canada</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <input type="text" id="search">
@@ -49,29 +62,66 @@
                 <aside class="aside aside1" onmouseover="mudarImgLocation()" onmouseout="voltarImg()">
                     <img src="./images/location-white.png" alt="location" class="img-aside" id="img-location">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h4> Read More </h4>
+                    <h4 id="show-readmore1"> Read More </h4>
                     <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
                 </aside>
+
+                <div class="readmore readmore1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore1">
+                        Close
+                    </button>
+                </div>
+
+                
             </section>
 
             <section class="section section2">
                 <aside class="aside aside2" onmouseover="mudarImgPlaces()" onmouseout="voltarImg()">
                     <img src="./images/places-white.png" alt="places-white" class="img-aside" id="img-places">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h4> Read More </h4>
+                    <h4 id="show-readmore2"> Read More </h4>
                     <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
                 </aside>
+
+                <div class="readmore readmore2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore2">
+                        Close
+                    </button>
+                </div>
             </section>
 
             <section class="section section3" onmouseover="mudarImgUser()" onmouseout="voltarImg()">
                 <aside class="aside aside3">
                     <img src="./images/section-user-white.png" alt="user-white" class="img-aside" id="img-user">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h4> Read More </h4>
-                    <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                    <h4 id="show-readmore3"> Read More </h4>
+                    <img src="./images/arrow-right.png" alt="arrow-right" class="img-arrow" >
                 </aside>
+
+                <div class="readmore readmore3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore3">
+                        Close
+                    </button>
+                </div>
             </section>
         </div>
+
+        
 
         <aside class="favoriteSpots" data-aos="fade-up">
             <p> Find the best spots fot you </p>
@@ -81,18 +131,26 @@
         <div class="container-slider" data-aos="fade-up">
 
             <div class="container-images">
+                
                 <div class="card card1">
+                    <a href="./images/card-1.jpg" data-lightbox="models" data-title="Image1">
                     <div class="container-img">
                         <img src="./images/card-1.jpg" alt="" class="item current-item">
+                  
                     </div>
+                
                     <div class="description container-img-text">
                         <h2>Osaka Castle</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
+            
+
 
                 <div class="card card2">
+                    <a href="./images/card-2.png" data-lightbox="models" data-title="Image2">
                     <div class="container-img">
                         <img src="./images/card-2.png" alt="" class="item">
                     </div>
@@ -101,9 +159,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card3">
+                    <a href="./images/card-3.jpg" data-lightbox="models" data-title="Image3">
                     <div class="container-img">
                         <img src="./images/card-3.jpg" alt="" class="item">
                     </div>
@@ -112,9 +172,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card4">
+                    <a href="./images/card-4.jpg" data-lightbox="models" data-title="Image4">
                     <div class="container-img">
                         <img src="./images/card-4.jpg" alt="" class="item">
                     </div>
@@ -123,9 +185,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card5">
+                    <a href="./images/card-5.jpg" data-lightbox="models" data-title="Image5">
                     <div class="container-img">
                         <img src="./images/card-5.jpg" alt="" class="item">
                     </div>
@@ -134,9 +198,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card6">
+                    <a href="./images/card-6.jpg" data-lightbox="models" data-title="Image6">
                     <div class="container-img">
                         <img src="./images/card-6.jpg" alt="" class="item">
                     </div>
@@ -145,9 +211,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card7">
+                    <a href="./images/card-7.jpg" data-lightbox="models" data-title="Image7">
                     <div class="container-img">
                         <img src="./images/card-7.jpg" alt="" class="item">
                     </div>
@@ -156,9 +224,11 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
 
                 <div class="card card8">
+                    <a href="./images/card-8.jpg" data-lightbox="models" data-title="Image8"></a>
                     <div class="container-img">
                         <img src="./images/card-8.jpg" alt="" class="item">
                     </div>
@@ -167,25 +237,30 @@
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
+                </a>
                 </div>
             </div>
+
         </div>
         <button class="prev-button control"><img src="./images/arrow-left-slider.png" alt="prev-button"></button>
         <button class="next-button control"><img src="./images/arrow-right-slider.png" alt="next-button"></button>
     </main>
 
     <footer>
-        <h5> emailofvisit@gmail.com </h5>
+        <h5><img src="./images/envelope.png" alt="Email"> emailofvisit@gmail.com </h5>
+        <div class="ball-japan"></div>
         <p><img src="./images/whatsapp.png" alt="Contact Us Wpp"> 99-99999-9999 </p>
     </footer>
 
     <script src="./scriptJP.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
         });
     </script>
+
 </body>
 
 </html>

@@ -1,3 +1,12 @@
+// Função Hover Dropdown
+function chanceImg(){
+    document.getElementById('arrow-down').src = "../firstPage/images/arrow-up.png";
+}
+
+function backImg(){
+    document.getElementById('arrow-down').src = "../firstPage/images/arrow-down.png";
+}
+
 // Escrever texto sozinho
 var el = document.querySelector('#visit');
 var text = 'Visit'
@@ -99,3 +108,73 @@ controls.forEach((control) => {
         textImg[currentItem].classList.add("container-img-text");
     });
 });
+
+// Readmore Aside
+var button1 = document.getElementById("show-readmore1");
+var button2 = document.getElementById("show-readmore2");
+var button3 = document.getElementById("show-readmore3");
+
+
+button1.addEventListener('click', () => {
+    var container = document.querySelector(".readmore1");
+
+    if(container.style.display === "none"){
+        container.style.display = "flex";
+    } else {
+        container.style.display = "none";
+    }
+})
+
+button2.addEventListener('click', () => {
+    var container = document.querySelector(".readmore2");
+
+    if(container.style.display === "none"){
+        container.style.display = "flex";
+    } else {
+        container.style.display = "none";
+    }
+})
+
+button3.addEventListener('click', () => {
+    var container = document.querySelector(".readmore3");
+
+    if(container.style.display === "none"){
+        container.style.display = "flex";
+    } else {
+        container.style.display = "none";
+    }
+})
+
+var backbutton1 = document.querySelector(".back-readmore1");
+var backbutton2 = document.querySelector(".back-readmore2");
+var backbutton3 = document.querySelector(".back-readmore3");
+
+backbutton1.addEventListener('click', () => {
+    var container = document.querySelector(".readmore1");
+
+    if(container.style.display === "flex"){
+        container.style.display = "none";
+    } else {
+        container.style.display = "flex";
+    }
+})
+
+backbutton2.addEventListener('click', () => {
+    var container = document.querySelector(".readmore2");
+
+    if(container.style.display === "flex"){
+        container.style.display = "none";
+    } else {
+        container.style.display = "flex";
+    }
+})
+
+backbutton3.addEventListener('click', () => {
+    var container = document.querySelector(".readmore3");
+
+    if(container.style.display === "flex"){
+        container.style.display = "none";
+    } else {
+        container.style.display = "flex";
+    }
+})

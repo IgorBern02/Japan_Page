@@ -144,3 +144,44 @@
 .aside3:hover::after {
     opacity: 1;
 }
+
+.readmore{
+    border: 1px solid pink;
+    position: absolute;
+    width: 90%;
+    height: 155px;
+    background-color: var(--primary-color);
+    z-index: 2;
+    color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 7px 4px 20px -6px rgba(255,0,0,0.83);
+    display: none;
+}
+
+.readmore p{
+    text-align: left;
+    font-size: 15px;
+    font-family: barlow;
+    margin-left: 10px;
+}
+
+.readmore button{
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    font-family: barlow;
+    font-size: 20px;
+    background-color: tomato;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.readmore button:hover{
+    background-color: rgb(253, 53, 53);
+    color: var(--primary-color);
+}
