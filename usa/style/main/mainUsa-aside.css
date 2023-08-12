@@ -155,7 +155,7 @@
     color: #000;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 7px 4px 20px -6px rgba(255,0,0,0.83);
+    box-shadow: 7px 4px 20px -6px rgba(0, 26, 255, 0.83);
     display: none;
 }
 
@@ -175,13 +175,13 @@
     border: none;
     font-family: barlow;
     font-size: 20px;
-    background-color: tomato;
+    background-color: rgb(71, 129, 255);
     border-radius: 10px;
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
 .readmore button:hover{
-    background-color: rgb(253, 53, 53);
+    background-color: rgb(24, 97, 255);
     color: var(--primary-color);
 }

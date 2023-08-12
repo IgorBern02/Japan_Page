@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./style/main/mainUsa-slider.css">
     <link rel="stylesheet" href="./style/footer/footer.css">
     <title> Page Usa </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../gallery/lightbox.css">
 </head>
 <body>
     <header class="header">
@@ -32,8 +35,8 @@
                                     id="arrow-down"></a>
 
                             <div class="dropdown-menu">
-                                <a href="./indexJP.html">Japan</a>
-                                <a href="./indesUsa.html">United States</a>
+                                <a href="../japan/indexJP.html">Japan</a>
+                                <a href="./indexUsa.html">United States</a>
                                 <a href="#">Germany</a>
                                 <a href="#">England</a>
                                 <a href="#">Canada</a>
@@ -48,7 +51,7 @@
 
         <div id="text-header">
             <h2 id="visit"></h2>
-            <h2 id="united-states"></h2>
+            <h2 id="usa"></h2>
             <p> Welcome to the United States Tourism </p>
         </div>
     </header>
@@ -135,7 +138,7 @@
                     </div>
                 
                     <div class="description container-img-text">
-                        <h2>New York</h2>
+                        <h2>Central Park</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -145,12 +148,12 @@
 
 
                 <div class="card card2">
-                    <a href="./images/card-2.png" data-lightbox="models" data-title="Image2">
+                    <a href="./images/card-2.jpg" data-lightbox="models" data-title="Image2">
                     <div class="container-img">
-                        <img src="./images/card-2.png" alt="" class="item">
+                        <img src="./images/card-2.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Los Angeles</h2>
+                        <h2>Magic Kingdom</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -163,7 +166,7 @@
                         <img src="./images/card-3.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Miami</h2>
+                        <h2>Empire State Building</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -176,7 +179,7 @@
                         <img src="./images/card-4.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Broklyn</h2>
+                        <h2>Times Square</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -189,7 +192,7 @@
                         <img src="./images/card-5.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Texas</h2>
+                        <h2>Grand Canyon</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -202,7 +205,7 @@
                         <img src="./images/card-6.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Seattle</h2>
+                        <h2>Hollywood</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -215,7 +218,7 @@
                         <img src="./images/card-7.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Chicago</h2>
+                        <h2>Statue of Liberty</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -228,7 +231,7 @@
                         <img src="./images/card-8.jpg" alt="" class="item">
                     </div>
                     <div class="description">
-                        <h2>Aspen</h2>
+                        <h2>Bridge Golden Gate</h2>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                     <div class="shadow"></div>
@@ -242,11 +245,18 @@
     </main>
     
     <footer>
-        <h5><img src="../global-images/envelope.png" alt="Email"> emailofvisit@gmail.com </h5>
-        <div class="ball-japan"></div>
-        <p><img src="../global-images/whatsapp.png" alt="Contact Us Wpp"> 99-99999-9999 </p>
+        <h5><img src="../global-images/envelope-white.png" alt="Email"> emailofvisit@gmail.com </h5>
+        <div class="img-usa"><img src="./images/img-footer.png" alt=""></div>
+        <p><img src="../global-images/whatsapp-white.png" alt="Contact Us Wpp"> 99-99999-9999 </p>
     </footer>
 
     <script src="scriptUsa.js"></script>
+    <script src="../gallery/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>

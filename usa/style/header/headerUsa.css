@@ -149,7 +149,6 @@ nav .nav-center a{
     position: absolute;
     top: 30%;
     left: 18%;
-    width: 30%;
     height: 50%;
     line-height: 140px;
     z-index: 2;
@@ -162,6 +161,12 @@ nav .nav-center a{
     font-family: bebas-neue;
     font-weight: 400;
 }
+
+#text-header #usa{
+    position: absolute;
+    width: 800px;
+}
+
 
 #text-header p {
     position: absolute;

@@ -10,7 +10,7 @@ function backImg(){
 // Escrever texto sozinho
 var el = document.querySelector('#visit');
 var text = 'Visit'
-var interval = 200;
+var interval = 400;
 
 function showtext(el, text, interval) {
     var char = text.split('').reverse();
@@ -27,9 +27,9 @@ function showtext(el, text, interval) {
     }, interval);
 }
 
-var el2 = document.querySelector('#united-states');
-var text2 = 'USA'
-var interval = 200;
+var el2 = document.querySelector('#usa');
+var text2 = 'United States'
+var interval = 400;
 
 function showtext2(el2, text2, interval) {
     var char = text2.split('').reverse();
@@ -51,7 +51,7 @@ showtext2(el2, text2, interval);
 
 // Função Hover
 function mudarImgLocation() {
-    document.getElementById('img-location').src = "../global-images/location-red.png"
+    document.getElementById('img-location').src = "../global-images/location-blue.png"
 }
 
 function voltarImg() {
@@ -61,11 +61,11 @@ function voltarImg() {
 }
 
 function mudarImgPlaces() {
-    document.getElementById('img-places').src = "../global-images/places-red.png"
+    document.getElementById('img-places').src = "../global-images/places-blue.png"
 }
 
 function mudarImgUser() {
-    document.getElementById('img-user').src = "../global-images/section-user-red.png"
+    document.getElementById('img-user').src = "../global-images/section-user-blue.png"
 }
 
 // Slider Imagens

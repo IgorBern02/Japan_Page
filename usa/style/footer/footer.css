@@ -10,7 +10,9 @@ footer{
     align-items: center;
     flex-direction: row;
     gap: 30px;
+    overflow: hidden;
 }
+
 footer h5, footer p{
     font-size: 20px;
     letter-spacing: 1px;
@@ -26,11 +28,9 @@ footer h5 img, footer p img{
     top: 2px;
 }
 
-footer .ball-japan{
-    width: 50px;
+footer .img-usa img{
+    width: 70px;
     height: 100%;
-    
-    border-radius: 50%;
     position: relative;
     right: 40px;
 }
