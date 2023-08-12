@@ -23,12 +23,14 @@
     height: 1px;
     position: absolute;
     left: 5%;
-    top: 3%;
+    top: 23.2%;
+    /* top: 3%; */
 }
 
 .section {
     position: relative;
-    bottom: 60%;
+    /* bottom: 60%; */
+    bottom: 40%;
     left: 5%;
     width: 90%;
     height: 20%;

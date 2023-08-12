@@ -1,0 +1,36 @@
+footer{
+    width: 100%;
+    background-color: #130fe4a8;
+    border: none;
+    color: white;
+    height: 8vh;
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+footer h5, footer p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: barlow;
+    font-weight: 200;
+    position: relative;
+    right: 40px;
+}
+
+footer h5 img, footer p img{
+    width: 16px;
+    position: relative;
+    top: 2px;
+}
+
+footer .ball-japan{
+    width: 50px;
+    height: 100%;
+    
+    border-radius: 50%;
+    position: relative;
+    right: 40px;
+}

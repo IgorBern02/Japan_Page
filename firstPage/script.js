@@ -1,10 +1,10 @@
 // Função Hover
 function chanceImg(){
-    document.getElementById('arrow-down').src = "./firstPage/images/arrow-up.png";
+    document.getElementById('arrow-down').src = "../global-images/arrow-up.png";
 }
 
 function backImg(){
-    document.getElementById('arrow-down').src = "./firstPage/images/arrow-down.png";
+    document.getElementById('arrow-down').src = "../global-images/arrow-down.png";
 }
 
 // Slider mudando automatico

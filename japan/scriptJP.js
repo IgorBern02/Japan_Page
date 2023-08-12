@@ -1,10 +1,10 @@
 // Função Hover Dropdown
 function chanceImg(){
-    document.getElementById('arrow-down').src = "../firstPage/images/arrow-up.png";
+    document.getElementById('arrow-down').src = "../global-images/arrow-up.png";
 }
 
 function backImg(){
-    document.getElementById('arrow-down').src = "../firstPage/images/arrow-down.png";
+    document.getElementById('arrow-down').src = "../global-images/arrow-down.png";
 }
 
 // Escrever texto sozinho
@@ -51,21 +51,21 @@ showtext2(el2, text2, interval);
 
 // Função Hover
 function mudarImgLocation() {
-    document.getElementById('img-location').src = "./images/location-red.png"
+    document.getElementById('img-location').src = "../global-images/location-red.png"
 }
 
 function voltarImg() {
-    document.getElementById('img-location').src = "./images/location-white.png";
-    document.getElementById('img-places').src = "./images/places-white.png";
-    document.getElementById('img-user').src = "./images/section-user-white.png";
+    document.getElementById('img-location').src = "../global-images/location-white.png";
+    document.getElementById('img-places').src = "../global-images/places-white.png";
+    document.getElementById('img-user').src = "../global-images/section-user-white.png";
 }
 
 function mudarImgPlaces() {
-    document.getElementById('img-places').src = "./images/places-red.png"
+    document.getElementById('img-places').src = "../global-images/places-red.png"
 }
 
 function mudarImgUser() {
-    document.getElementById('img-user').src = "./images/section-user-red.png"
+    document.getElementById('img-user').src = "../global-images/section-user-red.png"
 }
 
 // Slider Imagens

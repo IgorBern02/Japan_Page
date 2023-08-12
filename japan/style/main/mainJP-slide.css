@@ -1,7 +1,8 @@
 .favoriteSpots {
     color: var(--primary-color);
     position: relative;
-    top: 20%;
+    /* top: 20%; */
+    top: 40%;
     text-align: center;
 }
 
@@ -23,7 +24,8 @@
 .container-slider {
     position: relative;
     left: 15%;
-    top: 25%;
+    top: 50%;
+    /* top: 25%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +99,7 @@
 }
 
 .shadow {
-    width: 100%;
+    width: 120%;
     height: 100%;
     background: linear-gradient(180deg, transparent, #000000);
     position: relative;
@@ -125,7 +127,7 @@
     cursor: pointer;
     position: relative;
     left: 6%;
-    bottom: 5%;
+    top: 23%;
     background-color: rgba(225, 225, 225, 0.1);
     z-index: 1;
 }
@@ -139,7 +141,7 @@
     cursor: pointer;
     position: relative;
     left: 85%;
-    bottom: 5%;
+    top: 23%;
     background-color: rgba(225, 225, 225, 0.1);
     z-index: 1;
 }
