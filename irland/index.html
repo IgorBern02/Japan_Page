@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/header/header.css">
+    <link rel="stylesheet" href="./style/main/main.css">
+    <link rel="stylesheet" href="./style/main/main-aside.css">
+    <link rel="stylesheet" href="./style/main/main-slider.css">
+    <link rel="stylesheet" href="./style/footer/footer.css">
+    <link rel="stylesheet" href="../gallery/lightbox.css">
+    <title> Page Ireland </title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <h2>VisitIreland</h2>
+            </div>
+
+            <div class="nav-center">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Map</a></li>
+                        <!-- <li><a href="#">Countries</a></li> -->
+                        <li>
+                            <a href="#spots"> Favorite Spots</a>
+                        </li>
+                        <li class="dropdown" onmouseover="chanceImg()" onmouseout="backImg()">
+                            <a href="#">Countries <img src="../global-images/arrow-down.png" alt="small-down"
+                                    id="arrow-down"></a>
+
+                            <div class="dropdown-menu">
+                                <a href="../japan/indexJP.html">Japan</a>
+                                <a href="../usa/indexUsa.html">United States</a>
+                                <a href="../germany/index.html">Germany</a>
+                                <a href="../england/index.html">England</a>
+                                <a href="./index.html">Irland</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img src="./images/flag-irland.png" alt="flag-germany">
+        </nav>
+
+        <div id="text-header">
+            <h2 id="visit"></h2>
+            <h2 id="ireland"></h2>
+            <p> Welcome to the Ireland Tourism </p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="info" data-aos="fade-up">
+            <section class="section section1">
+                <aside class="aside aside1" onmouseover="mudarImgLocation()" onmouseout="voltarImg()">
+                    <img src="../global-images/location-white.png" alt="location" class="img-aside" id="img-location">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4 id="show-readmore1"> Read More </h4>
+                    <img src="../global-images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                </aside>
+
+                <div class="readmore readmore1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore1">
+                        Close
+                    </button>
+                </div>
+
+                
+            </section>
+
+            <section class="section section2">
+                <aside class="aside aside2" onmouseover="mudarImgPlaces()" onmouseout="voltarImg()">
+                    <img src="../global-images/places-white.png" alt="places-white" class="img-aside" id="img-places">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4 id="show-readmore2"> Read More </h4>
+                    <img src="../global-images/arrow-right.png" alt="arrow-right" class="img-arrow">
+                </aside>
+
+                <div class="readmore readmore2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore2">
+                        Close
+                    </button>
+                </div>
+            </section>
+
+            <section class="section section3" onmouseover="mudarImgUser()" onmouseout="voltarImg()">
+                <aside class="aside aside3">
+                    <img src="../global-images/section-user-white.png" alt="user-white" class="img-aside" id="img-user">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h4 id="show-readmore3"> Read More </h4>
+                    <img src="../global-images/arrow-right.png" alt="arrow-right" class="img-arrow" >
+                </aside>
+
+                <div class="readmore readmore3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus blanditiis autem aliquid eius quam sed, rerum molestias? 
+                        Mollitia sed quibusdam aspernatur, ipsa ipsum assumenda! 
+                        Ipsum quibusdam similique minus porro inventore.</p>
+
+                    <button class="back-readmore3">
+                        Close
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <aside class="favoriteSpots" data-aos="fade-up" id="spots">
+            <p> Find the best spots fot you </p>
+            <h2> favorite spots </h2>
+        </aside>
+
+        <div class="container-slider" data-aos="fade-up">
+
+            <div class="container-images">
+                
+                <div class="card card1">
+                    <a href="./images/card-1.jpg" data-lightbox="models" data-title="Image1">
+                    <div class="container-img">
+                        <img src="./images/card-1.jpg" alt="" class="item current-item">
+                  
+                    </div>
+                
+                    <div class="description container-img-text">
+                        <h2>Belfast</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+            
+
+
+                <div class="card card2">
+                    <a href="./images/card-2.jpg" data-lightbox="models" data-title="Image2">
+                    <div class="container-img">
+                        <img src="./images/card-2.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Cliffs of Moher</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card3">
+                    <a href="./images/card-3.jpg" data-lightbox="models" data-title="Image3">
+                    <div class="container-img">
+                        <img src="./images/card-3.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Dublin</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card4">
+                    <a href="./images/card-4.jpg" data-lightbox="models" data-title="Image4">
+                    <div class="container-img">
+                        <img src="./images/card-4.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Dunluce Castle</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card5">
+                    <a href="./images/card-5.jpg" data-lightbox="models" data-title="Image5">
+                    <div class="container-img">
+                        <img src="./images/card-5.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Galway</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card6">
+                    <a href="./images/card-6.jpg" data-lightbox="models" data-title="Image6">
+                    <div class="container-img">
+                        <img src="./images/card-6.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Giants Causeway</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card7">
+                    <a href="./images/card-7.jpg" data-lightbox="models" data-title="Image7">
+                    <div class="container-img">
+                        <img src="./images/card-7.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Mt Errigal</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+
+                <div class="card card8">
+                    <a href="./images/card-8.jpg" data-lightbox="models" data-title="Image8"></a>
+                    <div class="container-img">
+                        <img src="./images/card-8.jpg" alt="" class="item">
+                    </div>
+                    <div class="description">
+                        <h2>Tranarossan Bay</h2>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+                </div>
+            </div>
+
+        </div>
+        <button class="prev-button control"><img src="../global-images/arrow-left-slider.png" alt="prev-button"></button>
+        <button class="next-button control"><img src="../global-images/arrow-right-slider.png" alt="next-button"></button>
+    </main>
+    
+    <footer>
+        <h5><img src="../global-images/envelope-white.png" alt="Email"> emailofvisit@gmail.com </h5>
+        <div class="img-usa"><img src="./images/footer-ireland.png" alt=""></div>
+        <p><img src="../global-images/whatsapp-white.png" alt="Contact Us Wpp"> 99-99999-9999 </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="../gallery/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>

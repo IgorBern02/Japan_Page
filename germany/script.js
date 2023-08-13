@@ -27,7 +27,7 @@ function showtext(el, text, interval) {
     }, interval);
 }
 
-var el2 = document.querySelector('#usa');
+var el2 = document.querySelector('#germany');
 var text2 = 'Germany'
 var interval = 300;
 

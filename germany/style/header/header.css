@@ -162,15 +162,15 @@ nav .nav-center a{
     font-weight: 400;
 }
 
-#text-header #usa{
+#text-header #germany{
     position: absolute;
     width: 800px;
 }
 
 
 #text-header p {
-    position: absolute;
-    bottom: -10%;
+    position: relative;
+    top: 25%;
     font-family: Barlow;
     font-weight: 300;
     font-size: 14px;
