@@ -1,0 +1,37 @@
+footer{
+    width: 100%;
+    background-color: #ebdc0fe5;
+    border: none;
+    color: black;
+    height: 8vh;
+    margin-top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    overflow: hidden;
+}
+
+footer h5, footer p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: barlow;
+    font-weight: 200;
+    position: relative;
+    right: 40px;
+}
+
+footer h5 img, footer p img{
+    width: 16px;
+    position: relative;
+    top: 2px;
+}
+
+footer .img-usa img{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    top: 2px;
+    right: 40px;
+}
