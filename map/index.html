@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Page Map</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <h2>Travel&Dream</h2>
+            </div>
+
+            <div class="nav-center">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./index.html">Map</a></li>
+                        <!-- <li><a href="#">Countries</a></li> -->
+                        <li class="dropdown" onmouseover="chanceImg()" onmouseout="backImg()">
+                            <a href="#">Countries <img src="../global-images/arrow-down.png" alt="small-down"
+                                    id="arrow-down"></a>
+
+                            <div class="dropdown-menu">
+                                <a href="../japan/indexJP.html">Japan</a>
+                                <a href="../usa/indexUsa.html">United States</a>
+                                <a href="../germany/index.html">Germany</a>
+                                <a href="../england/index.html">England</a>
+                                <a href="../irland/index.html">Irland</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <div class="countrie countrie1">
+                <h2>Japan</h2>
+                <img src="./images/flag-japan.webp" alt="">
+            </div>
+
+            <div class="countrie countrie2">
+                <h2>United States</h2>
+                <img src="./images/flag-eua.webp" alt="">
+            </div>
+
+            <div class="countrie countrie3">
+                <h2>Germany</h2>
+                <img src="./images/flag-germany.avif" alt="">
+            </div>
+
+            <div class="countrie countrie4">
+                <h2>England</h2>
+                <img src="./images/flag-england.webp" alt="">
+            </div>
+
+            <div class="countrie countrie5">
+                <h2>Ireland</h2>
+                <img src="./images/flag-ireland.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- <base target="_blank" />  -->
+        <iframe 
+        width="600" 
+        height="315" 
+        frameborder="0" 
+        scrolling="no" 
+        marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;
+        hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;
+        sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Buenos+Aires,+Argentina&amp;
+        z=11&amp;ll=-34.603723,-58.381593&amp;output=embed">
+        </iframe>
+        <br />
+        <small>
+        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;
+        hl=es-419&amp;geocode=&amp;q=buenos+aires&amp;sll=37.0625,-95.677068&amp;
+        sspn=38.638819,80.859375&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Sao+Paulo,+Brazil&amp;
+        z=11&amp;ll=-34.603723,-58.381593">See bigger map</a>
+        </small>
+    </main>
+</body>
+
+</html>
