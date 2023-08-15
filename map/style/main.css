@@ -1,14 +1,28 @@
 main{
     position: absolute;
-    height: 140%;
+    height: 115%;
     width: 100%;
     background-color: black;
+}
+
+header .title h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: barlow;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header .title h2 span{
+    font-weight: 300;
 }
 
 .section{
     position: relative;
     left: 10%;
-    top: 17%;
+    top: 20%;
     height: 10%;
     width: 80%;
     display: flex;
@@ -54,23 +68,10 @@ main{
     opacity: 0.9;
 }
 
-iframe{
-    position: relative;
-    top: 25%;
-    left: 28%;
+#map { 
+    height: 400px;
+    width: 800px; 
+    position: absolute;
+    left: 20%;
+    top: 40%;
 }
-
-small{
-    position: relative;
-    top: 25%;
-    left: 45%;
-}
-
-small a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-family: barlow;
-}
-
-
