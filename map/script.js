@@ -61,6 +61,49 @@ var spotsEua = L.layerGroup([centralPark, magicKingdom, empireStateBuilding, tim
 
 layerControl.addOverlay(spotsEua, "Favorite Spots United States");
 
+//Spots Germany
+var frankFurt = L.marker([50.10811, 8.66951]).bindPopup('Frank Furt').addTo(map);
+    hamburgo = L.marker([53.54751, 9.99506]).bindPopup('Hamburgo').addTo(map);
+    heidelberg = L.marker([49.39910, 8.67735]).bindPopup('Heidelberg').addTo(map);
+    kassel = L.marker([51.31357, 9.48567]).bindPopup('Kassel').addTo(map);
+    leipzig = L.marker([51.34081, 12.35998]).bindPopup('Leipzig').addTo(map);
+    marburg = L.marker([50.80153, 8.76650]).bindPopup('Marburg').addTo(map);
+    trier = L.marker([49.75027, 6.64121]).bindPopup('Trier').addTo(map);
+    fussen = L.marker([47.56949, 10.69724]).bindPopup('Fussen').addTo(map);
+
+var spotsGermany = L.layerGroup([frankFurt, hamburgo,heidelberg, kassel, leipzig, marburg, trier, fussen]);
+
+layerControl.addOverlay(spotsGermany, "Favorite Spots Germany");
+
+//Spots England
+var britishAirwaysi360 = L.marker([50.82254, -0.15330]).bindPopup('British Airways i360').addTo(map);
+    britishMuseum = L.marker([51.51948, -0.12699]).bindPopup('British Museum').addTo(map);
+    castleMound = L.marker([52.15471, -0.46730]).bindPopup('Castle Mound').addTo(map);
+    leedsMinster = L.marker([53.73187, -1.61428]).bindPopup('Leeds Minster').addTo(map);
+    museumFitzwilliam = L.marker([52.20023, 0.11957]).bindPopup('Museum Fitzwilliam').addTo(map);
+    museumOxford = L.marker([51.75138, -1.25699]).bindPopup('Museum Oxford').addTo(map);
+    buckinghamPalace = L.marker([51.50137, -0.14191]).bindPopup('Buckingham Palace').addTo(map);
+    SEALIFEBrighton = L.marker([50.81964, -0.13575]).bindPopup('SEA LIFE Brighton').addTo(map);
+    
+
+var spotsEngland = L.layerGroup([britishAirwaysi360, britishMuseum, castleMound, leedsMinster, museumFitzwilliam, museumOxford, buckinghamPalace, SEALIFEBrighton]);
+
+layerControl.addOverlay(spotsEngland, "Favorite Spots England");
+
+//Spots Ireland
+var belfast = L.marker([54.59795, -5.92871]).bindPopup('Belfast').addTo(map);
+    cliffsOfMoher = L.marker([52.97179, -9.43067]).bindPopup('Cliffs of Moher').addTo(map);
+    dublin = L.marker([53.35250, -6.25876]).bindPopup('Dublin').addTo(map);
+    dunluceCastle = L.marker([55.21075, -6.57962]).bindPopup('Dunluce Castle').addTo(map);
+    galway = L.marker([53.27493, -9.05019]).bindPopup('Galway').addTo(map);
+    giantsCauseway = L.marker([55.24095, -6.51147]).bindPopup('Giants Causeway').addTo(map);
+    mtErrigal = L.marker([55.04062, -8.11573]).bindPopup('Mt Errigal').addTo(map);
+    tranarossanBay = L.marker([55.23012, -7.82395]).bindPopup('Tranarossan Bay').addTo(map);
+    
+
+var spotsIreland = L.layerGroup([belfast, cliffsOfMoher, dublin, dunluceCastle, galway, giantsCauseway, mtErrigal, tranarossanBay]);
+
+layerControl.addOverlay(spotsIreland, "Favorite Spots Ireland");
 // var popup = L.popup();
 
 // function onMapClick(e) {

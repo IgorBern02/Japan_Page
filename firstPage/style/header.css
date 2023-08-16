@@ -142,6 +142,7 @@ header .nav ul li{
     border-radius: 30px;
     outline: none;
     width: 100%;
+    text-transform: lowercase;
 }
 
 .input img{
