@@ -169,8 +169,8 @@ nav .nav-center a{
 
 
 #text-header p {
-    position: absolute;
-    bottom: -10%;
+    position: relative;
+    bottom: -25%;
     font-family: Barlow;
     font-weight: 300;
     font-size: 14px;

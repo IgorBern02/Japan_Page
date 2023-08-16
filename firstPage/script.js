@@ -37,16 +37,6 @@ stars.forEach((star, index1) => {
     })
 })
 
-// Pesquisar pelo input
-// function handleClick(event) {
-//     event.preventDefault();
-//     let valorInput = document.getElementById("quantity")
-//     if(codicao do valor do input) {
-//          location.replace("localizacao 1")
-//     } else {
-//          location.replace("localizacao 2")
-// }
-
 const input = document.querySelector("#search");
 const value = input.value;
 

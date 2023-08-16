@@ -10,7 +10,7 @@ function backImg(){
 // Escrever texto sozinho
 var el = document.querySelector('#visit');
 var text = 'Visit'
-var interval = 400;
+var interval = 200;
 
 function showtext(el, text, interval) {
     var char = text.split('').reverse();
@@ -29,7 +29,7 @@ function showtext(el, text, interval) {
 
 var el2 = document.querySelector('#usa');
 var text2 = 'United States'
-var interval = 300;
+var interval = 200;
 
 function showtext2(el2, text2, interval) {
     var char = text2.split('').reverse();
