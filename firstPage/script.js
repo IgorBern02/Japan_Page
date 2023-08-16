@@ -64,15 +64,3 @@ input.addEventListener("keyup", ({ key }) => {
         window.location.href = "./ireland/index.html"
     }  
 })
-
-// input.value === "japan", "Japan", "JAPAN", "japão", "Japão", "JAPÃO") {
-//     window.location.href = "./japan/indexJP.html"
-// }
-
-// if (input.value === "japan", "Japan", "JAPAN", "japão", "Japão", "JAPÃO") {
-//     window.location.href = "./japan/indexJP.html"
-// } else if (input.value === "eua", "Eua", "EUA", "united States", "United States", "United states", "UNITED STATES", "Estados unidos", "Estados Unidos", "estados Unidos") {
-//     window.location.href = "./usa/indexUsa.html"
-// } else if (input.value === "germany", "Germany", "GERMANY", "alemanha", "Alemanha", "ALEMANHA") {
-//     window.location.href = "./germany/index.html"
-// }
